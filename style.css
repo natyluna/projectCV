@@ -1,0 +1,51 @@
+
+*{
+    font-size: 18px;
+    margin: 0;
+}
+img{
+    max-width: 150px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.perfil{
+    text-align: center;
+    background-color: #2DCDDF;
+    padding-bottom: 10px;
+    margin-top: 0;
+   
+}
+.infoPersonal{
+    display: none;
+}
+.infoPersonal p{
+    width: 75%;
+}
+
+ul{
+    margin: 15px 0 10px 0;
+    
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    height: 40px;
+    width: 250px;
+    background-color:  #3C79F5;
+    border-color: #3C79F5;
+    border-radius: 1.5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: azure;
+    font-size: 18px
+}
+
+ul.cuadrado{
+    list-style-type:square;
+    margin-left: 20px;
+    text-transform: titlecase;
+    font-weight:bold;
+}
+p{
+    margin-left: 40px;
+}
