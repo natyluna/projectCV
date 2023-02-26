@@ -5,23 +5,33 @@ fetch('datos.json')
     nombre = data['resultados'][0]['nombre']['primero'];
     apellido= data['resultados'][0]['nombre']['último'];
     mail = data['resultados'][0]['correo electrónico'];
-console.log(data);
+    fechanac = data['resultados'][0]['dob']['fecha'];
+    genero = data['resultados'][0]['género'];
+    tel = data['resultados'][0]['teléfono'];
+    pais = data['resultados'][0]['localización']['país'];
+    dom = data['resultados'][0]['localización']['calle']['nombre'];
+    num = data['resultados'][0]['localización']['calle']['número'];
+
+
+/* console.log(data); */
     document.getElementById('displayname').innerHTML=nombre+apellido;
     document.getElementById('correo').innerHTML=mail;
+    document.getElementById('fechanac').innerHTML=fechanac;
+    document.getElementById('genero').innerHTML=genero;
+    document.getElementById('tel').innerHTML= tel;
+    document.getElementById('pais').innerHTML=pais;
+    document.getElementById('dom').innerHTML = dom+" - "+num;
 });
 
 
-document.getElementById('infoPersonal').addEventListener('click', function(){
-    document.getElementById('infoPers').style.display='block';
-    
-  
-})
 
 document.getElementById('experiencia').addEventListener('click', function(){
-    document.getElementById('exp').style.display='block';
+    let infoExperiencia = document.getElementById('exp').style.display;
+    document.getElementById('exp').style.display= infoExperiencia=='block' ? 'none' : 'block';
 })
 
 document.getElementById('habilidad').addEventListener('click', function(){
-    document.getElementById('hab').style.display='block';
+    let infoHabilidad = document.getElementById('hab').style.display;
+    document.getElementById('hab').style.display= infoHabilidad=='block' ? 'none' : 'block';
 })
 
